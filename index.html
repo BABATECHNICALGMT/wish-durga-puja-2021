@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>wishing Durga Puja in 2021</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            color: beige;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            animation: bgchange linear infinite 5.2s;
+            background-position: center;
+            background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("bg.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+
+        }
+ 
+        .marquee{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 100vh;
+            background: #000;
+        }
+        .marquee1{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 70px;
+            height: 100vh;
+            background: #000;
+        }
+        .marquee img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .box img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .marquee1 img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .container{
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-y: auto;
+            border: aqua 2px solid;
+            color: azure;
+            overflow-y:auto;
+        }
+        .form_get{
+            width: 90%;
+            min-height: 45px;
+            margin: auto;
+            position: fixed;
+            left: 50%;
+            bottom: 0px;
+            transform: translateX(-50%);
+            z-index: 65656!important;
+        }
+        input[type="text"]{
+            width: 80%;
+            height: 45px;
+            padding: 0 20px;
+            color: #000;
+            background: #fff;
+            border: none;
+            outline: none;
+            font-size: 22px;
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #submit{
+            width: 15%;
+            height: 45px;
+            border: none;
+            outline: none;
+            font-size: 22px;
+            text-align: center;
+            cursor: pointer;
+            background: rgba(251, 215, 8, 0.897);
+            font-weight: bold;
+        }
+        h5{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 1px;
+            padding: 5px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px #FF0000,
+                         0px 5px 8px #00ff88;
+                         background: rgb(197, 16, 173);
+        }
+        .users{
+            text-align: center;
+            font-size: 35px;
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 1px;
+            padding: 5px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px #00ff0d,
+                         0px 5px 8px #ff009d;
+            animation: zoo linear infinite 1.2s;
+            transition: all 1.2s;
+
+        }
+        .box_message{
+            max-width: 300px;
+            height: 300px;
+            background: red;
+            margin: 0 auto;
+        }
+        #textaimation{
+            font-weight: bold;
+            text-shadow: 5px 5px 8px #cecece,
+                         0px 5px 8px #ff009d;
+            font-weight: 900;
+            padding: 30px 0;
+            text-transform: capitalize;
+            color: #00ff0d;
+            animation: zoom linear infinite 1.2s;
+            transition: all 1.2s;
+            font-family: 'Poppins', sans-serif;
+            font-family: 400;
+    
+		}
+        
+        .user{
+            
+            font-weight: bold;
+            text-shadow: 5px 5px 8px #cecece,
+                         0px 5px 8px #ff009d;
+            text-align: center;
+            text-transform: capitalize;
+            animation: zooms linear infinite 1.2s;
+            transition: all 1.2s;
+            font-family: 'Poppins', sans-serif;
+            color: gold;
+        }
+		
+        @keyframes zoom{
+            0%{
+                font-size: 20px;
+            }
+            60%{
+                font-size: 27px;
+            }
+            100%{
+                font-size: 20px;
+            }
+        }
+        @keyframes zooms{
+            0%{
+                font-size: 25px;
+            }
+            60%{
+                font-size: 35px;
+            }
+            100%{
+                font-size: 25px;
+            }
+        }
+        @keyframes zoo{
+            0%{
+                font-size: 20px;
+                color: gold;
+            }
+            60%{
+                font-size: 25px;
+                color: rgb(255, 0, 43);
+
+            }
+            100%{
+                font-size: 20px;
+                color: gold;
+
+            }
+        }
+.bhhover{
+    background:url('sik.gif');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+}
+
+     
+    </style>
+</head>
+<body onclick="playAudio()">
+    <marquee behavior="scroll" direction="up" class="marquee">
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+       
+    </marquee>
+    <marquee class="marquee1" direction="down">
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+    </marquee>
+    <div class="container">
+       <div class="wapper">
+           <!-- comming time -->
+           <h5 id="demo">6 day, 2 hrs, 7 min, 18 sec</h5>
+           <hr>
+           <!-- wish message -->
+           <h4 class="users">wish you in Advance</h4>
+           <br>
+           <h3 class="user" id="nam">sikendar kumar</h3>
+           <!-- wish message -->
+              <marquee direction="down" width="350" height="350" behavior="alternate" class="bhhover">
+                <marquee behavior="alternate" >
+                    <h3 id="textaimation">happy Durga puja</h3>
+                  </marquee>
+              </marquee>
+             <!-- wish name-->
+           
+              <marquee behavior="scroll" direction="up" scrollamount="5" class="box">
+        <img src="./bb.jpg" alt="img" scrollamount="211"></br></br>
+        
+               <p> नवरात्रि में मां का आशीर्वाद प्राप्त करने के लिए हर रोज पढ़ें दुर्गा चालीसा… </p>
+
+                नमो नमो दुर्गे सुख करनी।
+                नमो नमो दुर्गे दुःख हरनी॥
+                <img src="./gg.jpg" alt="img" scrollamount="211"></br></br>
+         
+                निरंकार है ज्योति तुम्हारी।
+                तिहूं लोक फैली उजियारी॥
+                <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+                 
+                शशि ललाट मुख महाविशाला।
+                नेत्र लाल भृकुटि विकराला॥
+                <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+                
+                रूप मातु को अधिक सुहावे।
+                दरश करत जन अति सुख पावे॥
+                <img src="./cc.jpg" alt="img" scrollamount="211"></br></br>
+               
+                तुम संसार शक्ति लै कीना।
+                पालन हेतु अन्न धन दीना॥
+                <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+                
+                अन्नपूर्णा हुई जग पाला।
+                तुम ही आदि सुन्दरी बाला॥
+                <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+                
+                प्रलयकाल सब नाशन हारी।
+                तुम गौरी शिवशंकर प्यारी॥
+                <img src="./ff.jpg" alt="img" scrollamount="211"></br></br>
+                 
+                शिव योगी तुम्हरे गुण गावें।
+                ब्रह्मा विष्णु तुम्हें नित ध्यावें॥
+                <img src="./ii.jpg" alt="img" scrollamount="211"></br></br>
+                
+                रूप सरस्वती को तुम धारा।
+                दे सुबुद्धि ऋषि मुनिन उबारा॥
+                <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+                धरयो रूप नरसिंह को अम्बा।
+                परगट भई फाड़कर खम्बा॥
+        <img src="./aa.jpg" alt="img" scrollamount="211"></br></br>
+                
+                रक्षा करि प्रह्लाद बचायो।
+                हिरण्याक्ष को स्वर्ग पठायो॥
+                <img src="./ee.jpg" alt="img" scrollamount="211"></br></br>
+                
+                लक्ष्मी रूप धरो जग माहीं।
+                श्री नारायण अंग समाहीं॥
+                
+                क्षीरसिन्धु में करत विलासा।
+                दयासिन्धु दीजै मन आसा॥
+                
+                हिंगलाज में तुम्हीं भवानी।
+                महिमा अमित न जात बखानी॥
+                
+                मातंगी अरु धूमावति माता।
+                भुवनेश्वरी बगला सुख दाता॥
+                
+                श्री भैरव तारा जग तारिणी।
+                छिन्न भाल भव दुःख निवारिणी॥
+                
+                केहरि वाहन सोह भवानी।
+                लांगुर वीर चलत अगवानी॥
+                
+                कर में खप्पर खड्ग विराजै।
+                जाको देख काल डर भाजै॥
+                
+                सोहै अस्त्र और त्रिशूला।
+                जाते उठत शत्रु हिय शूला॥
+                
+                नगरकोट में तुम्हीं विराजत।
+                तिहुँलोक में डंका बाजत॥
+                
+                शुम्भ निशुम्भ दानव तुम मारे।
+                रक्तन बीज शंखन संहारे॥
+                
+                महिषासुर नृप अति अभिमानी।
+                जेहि अघ भार मही अकुलानी॥
+                
+                रूप कराल कालिका धारा।
+                सेन सहित तुम तिहि संहारा॥
+                
+                परी गाढ़ सन्तन पर जब जब।
+                भई सहाय मातु तुम तब तब॥
+                
+                आभा पुरी अरु बासव लोका।
+                तब महिमा सब रहें अशोका॥
+                
+                ज्वाला में है ज्योति तुम्हारी।
+                तुम्हें सदा पूजें नर-नारी॥
+                
+                प्रेम भक्ति से जो यश गावें।
+                दुःख दारिद्र निकट नहिं आवें॥
+                
+                ध्यावे तुम्हें जो नर मन लाई।
+                जन्म-मरण ताकौ छुटि जाई॥
+                
+                जोगी सुर मुनि कहत पुकारी।
+                योग न हो बिन शक्ति तुम्हारी॥
+                
+                शंकर आचारज तप कीनो।
+                काम क्रोध जीति सब लीनो॥
+                
+                निशिदिन ध्यान धरो शंकर को।
+                काहु काल नहिं सुमिरो तुमको॥
+                
+                शक्ति रूप का मरम न पायो।
+                शक्ति गई तब मन पछितायो॥
+                
+                शरणागत हुई कीर्ति बखानी।
+                जय जय जय जगदम्ब भवानी॥
+                
+                भई प्रसन्न आदि जगदम्बा।
+                दई शक्ति नहिं कीन विलम्बा॥
+                
+                मोको मातु कष्ट अति घेरो।
+                तुम बिन कौन हरै दुःख मेरो॥
+                
+                आशा तृष्णा निपट सतावें।
+                रिपु मुरख मोही डरपावे॥
+                
+                शत्रु नाश कीजै महारानी।
+                सुमिरौं इकचित तुम्हें भवानी॥
+                
+                करो कृपा हे मातु दयाला।
+                ऋद्धि-सिद्धि दै करहु निहाला।।
+                
+                जब लगि जियऊं दया फल पाऊं।
+                तुम्हरो यश मैं सदा सुनाऊं॥
+                
+                श्री दुर्गा चालीसा जो कोई गावै।
+                सब सुख भोग परमपद पावै॥
+                
+                देवीदास शरण निज जानी।
+                करहु कृपा जगदम्ब भवानी॥
+                
+                ॥इति श्रीदुर्गा चालीसा सम्पूर्ण॥
+                
+                जय माता दी
+                
+                दुर्गा माता की आरती पढ़ें
+              </marquee>
+
+
+           
+           <br>
+       </div>
+    </div>
+   <audio src="dd.mp3" loop id="myAudio"></audio>
+    <div class="form_get">
+        <form method="get">
+            <input type="text" name="" placeholder="Enter your name" autocomplete="off" autofocus required id="uname">
+            <button id="submit" onclick="mysubmit()">Click</button>
+
+        </form>
+    </div>
+    <script>
+      
+
+// Set the date we're counting down to
+var countDownDate = new Date("15 Oct 2021 ").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "day " + hours + "hou "
+  + minutes + "min " + seconds + "sec ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+var x = document.getElementById("myAudio"); 
+     
+        function playAudio() { 
+        x.play(); 
+        } 
+
+    const mysubmit = function(){
+        gtag('event','click', {
+            'event_category' : 'interaction',
+            'event_lavel': 'goButtonClick'
+        });
+    }
+    </script>
+</body>
+</html>
